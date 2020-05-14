@@ -169,7 +169,7 @@
             this.btnClear.BackColor = System.Drawing.Color.Transparent;
             this.btnClear.Location = new System.Drawing.Point(17, 91);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(38, 23);
+            this.btnClear.Size = new System.Drawing.Size(31, 23);
             this.btnClear.TabIndex = 11;
             this.btnClear.Text = "C";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -242,6 +242,7 @@
             this.btnDecimal.TabIndex = 18;
             this.btnDecimal.Text = ".";
             this.btnDecimal.UseVisualStyleBackColor = true;
+            this.btnDecimal.Click += new System.EventHandler(this.button_Click);
             // 
             // btnPosNeg
             // 
@@ -260,15 +261,16 @@
             this.txtResult.Size = new System.Drawing.Size(318, 20);
             this.txtResult.TabIndex = 20;
             this.txtResult.Text = "0";
+            this.txtResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnClearEntry
             // 
             this.btnClearEntry.BackColor = System.Drawing.Color.Transparent;
             this.btnClearEntry.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnClearEntry.FlatAppearance.BorderSize = 0;
-            this.btnClearEntry.Location = new System.Drawing.Point(54, 91);
+            this.btnClearEntry.Location = new System.Drawing.Point(61, 91);
             this.btnClearEntry.Name = "btnClearEntry";
-            this.btnClearEntry.Size = new System.Drawing.Size(38, 23);
+            this.btnClearEntry.Size = new System.Drawing.Size(31, 23);
             this.btnClearEntry.TabIndex = 21;
             this.btnClearEntry.Text = "CE";
             this.btnClearEntry.UseVisualStyleBackColor = false;
