@@ -300,5 +300,11 @@ namespace Calculator
         {
             btnEquals.PerformClick();
         }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            panel1.Dock = DockStyle.Fill;
+         
+        }
     }
 }

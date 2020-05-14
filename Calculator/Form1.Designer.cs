@@ -52,11 +52,14 @@
             this.txtResult = new System.Windows.Forms.TextBox();
             this.btnClearEntry = new System.Windows.Forms.Button();
             this.lblOperation = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnEight
             // 
-            this.btnEight.Location = new System.Drawing.Point(98, 120);
+            this.btnEight.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEight.Location = new System.Drawing.Point(96, 110);
             this.btnEight.Name = "btnEight";
             this.btnEight.Size = new System.Drawing.Size(75, 23);
             this.btnEight.TabIndex = 0;
@@ -66,7 +69,8 @@
             // 
             // btnSeven
             // 
-            this.btnSeven.Location = new System.Drawing.Point(17, 120);
+            this.btnSeven.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSeven.Location = new System.Drawing.Point(15, 110);
             this.btnSeven.Name = "btnSeven";
             this.btnSeven.Size = new System.Drawing.Size(75, 23);
             this.btnSeven.TabIndex = 1;
@@ -76,7 +80,8 @@
             // 
             // btnSix
             // 
-            this.btnSix.Location = new System.Drawing.Point(179, 149);
+            this.btnSix.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSix.Location = new System.Drawing.Point(177, 139);
             this.btnSix.Name = "btnSix";
             this.btnSix.Size = new System.Drawing.Size(75, 23);
             this.btnSix.TabIndex = 2;
@@ -86,7 +91,8 @@
             // 
             // btnFive
             // 
-            this.btnFive.Location = new System.Drawing.Point(98, 149);
+            this.btnFive.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnFive.Location = new System.Drawing.Point(96, 139);
             this.btnFive.Name = "btnFive";
             this.btnFive.Size = new System.Drawing.Size(75, 23);
             this.btnFive.TabIndex = 3;
@@ -96,7 +102,8 @@
             // 
             // btnFour
             // 
-            this.btnFour.Location = new System.Drawing.Point(17, 149);
+            this.btnFour.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnFour.Location = new System.Drawing.Point(15, 139);
             this.btnFour.Name = "btnFour";
             this.btnFour.Size = new System.Drawing.Size(75, 23);
             this.btnFour.TabIndex = 4;
@@ -106,7 +113,8 @@
             // 
             // btnThree
             // 
-            this.btnThree.Location = new System.Drawing.Point(179, 178);
+            this.btnThree.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnThree.Location = new System.Drawing.Point(177, 168);
             this.btnThree.Name = "btnThree";
             this.btnThree.Size = new System.Drawing.Size(75, 23);
             this.btnThree.TabIndex = 5;
@@ -116,7 +124,8 @@
             // 
             // btnOne
             // 
-            this.btnOne.Location = new System.Drawing.Point(17, 178);
+            this.btnOne.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnOne.Location = new System.Drawing.Point(15, 168);
             this.btnOne.Name = "btnOne";
             this.btnOne.Size = new System.Drawing.Size(75, 23);
             this.btnOne.TabIndex = 6;
@@ -126,7 +135,8 @@
             // 
             // btnTwo
             // 
-            this.btnTwo.Location = new System.Drawing.Point(98, 178);
+            this.btnTwo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnTwo.Location = new System.Drawing.Point(96, 168);
             this.btnTwo.Name = "btnTwo";
             this.btnTwo.Size = new System.Drawing.Size(75, 23);
             this.btnTwo.TabIndex = 7;
@@ -136,7 +146,8 @@
             // 
             // btnZero
             // 
-            this.btnZero.Location = new System.Drawing.Point(98, 207);
+            this.btnZero.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnZero.Location = new System.Drawing.Point(96, 197);
             this.btnZero.Name = "btnZero";
             this.btnZero.Size = new System.Drawing.Size(75, 23);
             this.btnZero.TabIndex = 8;
@@ -146,7 +157,8 @@
             // 
             // btnNine
             // 
-            this.btnNine.Location = new System.Drawing.Point(179, 120);
+            this.btnNine.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnNine.Location = new System.Drawing.Point(177, 110);
             this.btnNine.Name = "btnNine";
             this.btnNine.Size = new System.Drawing.Size(75, 23);
             this.btnNine.TabIndex = 9;
@@ -156,7 +168,8 @@
             // 
             // btnMultiply
             // 
-            this.btnMultiply.Location = new System.Drawing.Point(260, 120);
+            this.btnMultiply.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnMultiply.Location = new System.Drawing.Point(258, 110);
             this.btnMultiply.Name = "btnMultiply";
             this.btnMultiply.Size = new System.Drawing.Size(75, 23);
             this.btnMultiply.TabIndex = 10;
@@ -166,8 +179,9 @@
             // 
             // btnClear
             // 
+            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnClear.BackColor = System.Drawing.Color.Transparent;
-            this.btnClear.Location = new System.Drawing.Point(17, 91);
+            this.btnClear.Location = new System.Drawing.Point(15, 81);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(31, 23);
             this.btnClear.TabIndex = 11;
@@ -177,8 +191,9 @@
             // 
             // btnBrackets
             // 
+            this.btnBrackets.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnBrackets.BackColor = System.Drawing.Color.Transparent;
-            this.btnBrackets.Location = new System.Drawing.Point(98, 91);
+            this.btnBrackets.Location = new System.Drawing.Point(96, 81);
             this.btnBrackets.Name = "btnBrackets";
             this.btnBrackets.Size = new System.Drawing.Size(75, 23);
             this.btnBrackets.TabIndex = 12;
@@ -187,7 +202,8 @@
             // 
             // btnPercent
             // 
-            this.btnPercent.Location = new System.Drawing.Point(179, 91);
+            this.btnPercent.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPercent.Location = new System.Drawing.Point(177, 81);
             this.btnPercent.Name = "btnPercent";
             this.btnPercent.Size = new System.Drawing.Size(75, 23);
             this.btnPercent.TabIndex = 13;
@@ -197,7 +213,8 @@
             // 
             // btnDivide
             // 
-            this.btnDivide.Location = new System.Drawing.Point(260, 91);
+            this.btnDivide.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDivide.Location = new System.Drawing.Point(258, 81);
             this.btnDivide.Name = "btnDivide";
             this.btnDivide.Size = new System.Drawing.Size(75, 23);
             this.btnDivide.TabIndex = 14;
@@ -207,7 +224,8 @@
             // 
             // btnMinus
             // 
-            this.btnMinus.Location = new System.Drawing.Point(260, 149);
+            this.btnMinus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnMinus.Location = new System.Drawing.Point(258, 139);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(75, 23);
             this.btnMinus.TabIndex = 15;
@@ -217,7 +235,8 @@
             // 
             // btnPlus
             // 
-            this.btnPlus.Location = new System.Drawing.Point(260, 178);
+            this.btnPlus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPlus.Location = new System.Drawing.Point(258, 168);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(75, 23);
             this.btnPlus.TabIndex = 16;
@@ -227,7 +246,8 @@
             // 
             // btnEquals
             // 
-            this.btnEquals.Location = new System.Drawing.Point(260, 207);
+            this.btnEquals.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEquals.Location = new System.Drawing.Point(258, 197);
             this.btnEquals.Name = "btnEquals";
             this.btnEquals.Size = new System.Drawing.Size(75, 23);
             this.btnEquals.TabIndex = 17;
@@ -238,7 +258,8 @@
             // 
             // btnDecimal
             // 
-            this.btnDecimal.Location = new System.Drawing.Point(179, 207);
+            this.btnDecimal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDecimal.Location = new System.Drawing.Point(177, 197);
             this.btnDecimal.Name = "btnDecimal";
             this.btnDecimal.Size = new System.Drawing.Size(75, 23);
             this.btnDecimal.TabIndex = 18;
@@ -248,7 +269,8 @@
             // 
             // btnPosNeg
             // 
-            this.btnPosNeg.Location = new System.Drawing.Point(17, 207);
+            this.btnPosNeg.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPosNeg.Location = new System.Drawing.Point(15, 197);
             this.btnPosNeg.Name = "btnPosNeg";
             this.btnPosNeg.Size = new System.Drawing.Size(75, 23);
             this.btnPosNeg.TabIndex = 19;
@@ -257,8 +279,9 @@
             // 
             // txtResult
             // 
+            this.txtResult.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtResult.BackColor = System.Drawing.Color.Khaki;
-            this.txtResult.Location = new System.Drawing.Point(17, 45);
+            this.txtResult.Location = new System.Drawing.Point(15, 35);
             this.txtResult.Name = "txtResult";
             this.txtResult.Size = new System.Drawing.Size(318, 20);
             this.txtResult.TabIndex = 20;
@@ -267,10 +290,11 @@
             // 
             // btnClearEntry
             // 
+            this.btnClearEntry.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnClearEntry.BackColor = System.Drawing.Color.Transparent;
             this.btnClearEntry.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnClearEntry.FlatAppearance.BorderSize = 0;
-            this.btnClearEntry.Location = new System.Drawing.Point(61, 91);
+            this.btnClearEntry.Location = new System.Drawing.Point(59, 81);
             this.btnClearEntry.Name = "btnClearEntry";
             this.btnClearEntry.Size = new System.Drawing.Size(31, 23);
             this.btnClearEntry.TabIndex = 21;
@@ -280,12 +304,47 @@
             // 
             // lblOperation
             // 
+            this.lblOperation.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblOperation.AutoSize = true;
             this.lblOperation.BackColor = System.Drawing.Color.Khaki;
-            this.lblOperation.Location = new System.Drawing.Point(14, 29);
+            this.lblOperation.Location = new System.Drawing.Point(12, 19);
             this.lblOperation.Name = "lblOperation";
             this.lblOperation.Size = new System.Drawing.Size(0, 13);
             this.lblOperation.TabIndex = 22;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.Controls.Add(this.lblOperation);
+            this.panel1.Controls.Add(this.btnEight);
+            this.panel1.Controls.Add(this.btnClearEntry);
+            this.panel1.Controls.Add(this.btnSeven);
+            this.panel1.Controls.Add(this.txtResult);
+            this.panel1.Controls.Add(this.btnSix);
+            this.panel1.Controls.Add(this.btnPosNeg);
+            this.panel1.Controls.Add(this.btnFive);
+            this.panel1.Controls.Add(this.btnDecimal);
+            this.panel1.Controls.Add(this.btnFour);
+            this.panel1.Controls.Add(this.btnEquals);
+            this.panel1.Controls.Add(this.btnThree);
+            this.panel1.Controls.Add(this.btnPlus);
+            this.panel1.Controls.Add(this.btnOne);
+            this.panel1.Controls.Add(this.btnMinus);
+            this.panel1.Controls.Add(this.btnTwo);
+            this.panel1.Controls.Add(this.btnDivide);
+            this.panel1.Controls.Add(this.btnZero);
+            this.panel1.Controls.Add(this.btnPercent);
+            this.panel1.Controls.Add(this.btnNine);
+            this.panel1.Controls.Add(this.btnBrackets);
+            this.panel1.Controls.Add(this.btnMultiply);
+            this.panel1.Controls.Add(this.btnClear);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(345, 229);
+            this.panel1.TabIndex = 23;
             // 
             // Form1
             // 
@@ -293,38 +352,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(354, 267);
-            this.Controls.Add(this.lblOperation);
-            this.Controls.Add(this.btnClearEntry);
-            this.Controls.Add(this.txtResult);
-            this.Controls.Add(this.btnPosNeg);
-            this.Controls.Add(this.btnDecimal);
-            this.Controls.Add(this.btnEquals);
-            this.Controls.Add(this.btnPlus);
-            this.Controls.Add(this.btnMinus);
-            this.Controls.Add(this.btnDivide);
-            this.Controls.Add(this.btnPercent);
-            this.Controls.Add(this.btnBrackets);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnMultiply);
-            this.Controls.Add(this.btnNine);
-            this.Controls.Add(this.btnZero);
-            this.Controls.Add(this.btnTwo);
-            this.Controls.Add(this.btnOne);
-            this.Controls.Add(this.btnThree);
-            this.Controls.Add(this.btnFour);
-            this.Controls.Add(this.btnFive);
-            this.Controls.Add(this.btnSix);
-            this.Controls.Add(this.btnSeven);
-            this.Controls.Add(this.btnEight);
+            this.ClientSize = new System.Drawing.Size(345, 230);
+            this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+            this.Resize += new System.EventHandler(this.Form1_Resize);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -353,6 +392,7 @@
         private System.Windows.Forms.TextBox txtResult;
         private System.Windows.Forms.Button btnClearEntry;
         private System.Windows.Forms.Label lblOperation;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
