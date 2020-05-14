@@ -193,6 +193,7 @@
             this.btnPercent.TabIndex = 13;
             this.btnPercent.Text = "%";
             this.btnPercent.UseVisualStyleBackColor = true;
+            this.btnPercent.Click += new System.EventHandler(this.operator_click);
             // 
             // btnDivide
             // 
@@ -233,6 +234,7 @@
             this.btnEquals.Text = "=";
             this.btnEquals.UseVisualStyleBackColor = true;
             this.btnEquals.Click += new System.EventHandler(this.BtnEquals_Click);
+            this.btnEquals.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BtnEquals_KeyPress);
             // 
             // btnDecimal
             // 

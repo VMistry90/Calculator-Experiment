@@ -19,6 +19,7 @@ namespace Calculator
         bool equalOnceUsed = false;
         String valueLabel = "";
         Double rightNum = 0;
+        Double p = 0;
 
         public Form1()
         {
@@ -34,7 +35,7 @@ namespace Calculator
             if (equalOnceUsed == true)
             {
                 txtResult.Text = "0";
-                lblOperation.Text = "";
+                //lblOperation.Text = "";
                 result = 0;
                 equalOnceUsed = false;
 
@@ -81,40 +82,100 @@ namespace Calculator
                 }
                 rightNum = Double.Parse(button.Text);
             }
+
+            //Focus on equal button, so user can press enter key at anytime.
+            btnEquals.Focus();
         }
 
         private void operator_click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
 
+            if (equalOnceUsed == true)
+            {
+                //txtResult.Text = "0";
+                //lblOperation.Text = "";
+                //result = 0;
+                equalOnceUsed = false;
+
+            }
+
             //check if result is not equal to zero. 
             if (result != 0)
             {
-                equalsRepeat = false;
-                Operater = button.Text;
-                result = Double.Parse(txtResult.Text);
-                valueLabel = result + Operater;
-                lblOperation.Text = valueLabel;
+                //if result is > 0 and operator used is %
+                if (Operater == "%")
+                {
+                    equalsRepeat = false;
+                    result = Double.Parse(txtResult.Text);
+                    p = result / 100;
+
+                    
+                    valueLabel = txtResult.Text + Operater;
+                    //result = Double.Parse(valueLabel + rightNum);
+                    lblOperation.Text = valueLabel;
+                    txtResult.Text = p.ToString();
+                }
+                else
+                {
+                    equalsRepeat = false;
+                    Operater = button.Text;
+                    result = Double.Parse(txtResult.Text);
+                    valueLabel = result + Operater;
+                    lblOperation.Text = valueLabel;
+                }
+               
             }
             else
             {
                 //if operation performed is false then add opertor to existing number
                 if (isOperationPerformed == false)
                 {
+                    
                     Operater = button.Text;
-                    result = Double.Parse(txtResult.Text);
-                    valueLabel = result + Operater;
-                    lblOperation.Text = valueLabel;
+
+                    //if result = 0 and operater used is %
+                    if (Operater == "%")
+                    {
+                        result = Double.Parse(txtResult.Text);
+                        p = result / 100;
+                        valueLabel = result + " " + Operater;
+                        lblOperation.Text = valueLabel;
+                        txtResult.Text = p.ToString();
+                    }
+                    else
+                    {
+                        result = Double.Parse(txtResult.Text);
+                        valueLabel = result + Operater;
+                        lblOperation.Text = valueLabel;
+                    }
+
                 }
                 else
                 {
                     //if operation performed is true then add the operator and get number on both sides of it.
                     Operater = button.Text;
-                    result = Double.Parse(txtResult.Text);
-                    valueLabel = result + Operater;
 
-                    result = Double.Parse(valueLabel + rightNum);
-                    lblOperation.Text = valueLabel + result;
+                    if (Operater == "%")
+                    {
+                        result = Double.Parse(txtResult.Text);
+                        p = result / 100;
+
+                        //valueLabel = result + Operater;
+                        valueLabel = p + Operater;
+                        result = Double.Parse(valueLabel + rightNum);
+                        lblOperation.Text = valueLabel;
+                        txtResult.Text = p.ToString();
+                    }
+                    else
+                    {
+                        result = Double.Parse(txtResult.Text);
+                        valueLabel = result + Operater;
+
+                        result = Double.Parse(valueLabel + rightNum);
+                        lblOperation.Text = valueLabel + result;
+                    }
+                    
                 }
 
             }
@@ -168,6 +229,11 @@ namespace Calculator
                         txtResult.Text = (result / Double.Parse(txtResult.Text)).ToString();
                         lblOperation.Text = valueLabel + rightNum;
                         break;
+                    case "%": 
+                        result = Double.Parse(txtResult.Text);
+                        txtResult.Text = (p * result).ToString();
+                        lblOperation.Text = valueLabel + " " + "of" + " " + rightNum;
+                        break; 
                     default:
                         break;
                 }
@@ -202,6 +268,12 @@ namespace Calculator
                         result = Double.Parse(rightNum.ToString());
                         txtResult.Text = (Double.Parse(txtResult.Text) / result).ToString();
                         break;
+                    case "%":
+                        rightNum += rightNum;
+                        result = rightNum;
+                        txtResult.Text = (p * result).ToString();
+                        lblOperation.Text = valueLabel + " " + "of" + " " + result;
+                        break;
                     default:
                         break;
                 }
@@ -222,5 +294,9 @@ namespace Calculator
             lblOperation.Text = "";
         }
 
+        private void BtnEquals_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            btnEquals.PerformClick();
+        }
     }
 }
