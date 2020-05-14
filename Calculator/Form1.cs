@@ -202,6 +202,7 @@ namespace Calculator
             rightNum = 0;
             txtResult.Text = "0";
             lblOperation.Text = "";
+            p = 0;
 
         }
        
@@ -292,6 +293,7 @@ namespace Calculator
             rightNum = 0;
             txtResult.Text = "0";
             lblOperation.Text = "";
+            p = 0;
         }
 
         private void BtnEquals_KeyPress(object sender, KeyPressEventArgs e)
